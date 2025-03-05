@@ -1,0 +1,26 @@
+{
+    "context": {
+        "bap_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+        "bap_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
+        "bpp_id": "preprod-ondc.khetisauda.com",
+        "bpp_uri": "https://preprod-ondc.khetisauda.com",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0261"
+            }
+        },
+        "transaction_id": "1d7af6c4-06ab-4439-8c04-b8c02e677806",
+        "message_id": "1e344cc7-3b3f-4c3a-993e-3f178e077bc7",
+        "timestamp": "2025-03-05T11:53:29.525Z",
+        "domain": "ONDC:RET10",
+        "core_version": "2.0.0",
+        "ttl": "PT10M",
+        "action": "issue_status"
+    },
+    "message": {
+        "issue_id": "ISSUE-1"
+    }
+}

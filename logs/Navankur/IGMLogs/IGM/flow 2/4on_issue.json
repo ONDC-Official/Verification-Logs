@@ -1,0 +1,211 @@
+{
+    "context": {
+        "bap_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+        "bap_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc",
+        "bpp_id": "preprod-ondc.khetisauda.com",
+        "bpp_uri": "https://preprod-ondc.khetisauda.com",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0261"
+            }
+        },
+        "transaction_id": "6a980a08-21e8-42cb-9e38-30dcb28dba99",
+        "message_id": "00a45f6c-174a-4ea2-816c-96ee492be876",
+        "timestamp": "2025-03-05T12:12:28.978Z",
+        "domain": "ONDC:RET10",
+        "core_version": "2.0.0",
+        "ttl": "PT30S",
+        "action": "on_issue"
+    },
+    "message": {
+        "upated_target": [
+            {
+                "path": "issue.actions",
+                "action": "APPENDED"
+            }
+        ],
+        "issue": {
+            "id": "ISSUE-1",
+            "status": "RESOLVED",
+            "level": "ISSUE",
+            "created_at": "2025-03-03T12:12:01.659Z",
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "P1D"
+            },
+            "refs": [
+                {
+                    "ref_id": "RAP-0000525",
+                    "ref_type": "ORDER"
+                }
+            ],
+            "actors": [
+                {
+                    "id": "CUST1",
+                    "type": "CONSUMER",
+                    "info": {
+                        "org": {
+                            "name": "preprod-ondc.khetisauda.com::ONDC:RET10"
+                        },
+                        "person": {
+                            "name": "Sam Manuel"
+                        },
+                        "contact": {
+                            "phone": "9879879870",
+                            "email": "sam@yahoo.com"
+                        }
+                    }
+                },
+                {
+                    "id": "NP1",
+                    "type": "INTERFACING_NP",
+                    "info": {
+                        "org": {
+                            "name": "preprod-ondc.khetisauda.com::ONDC:RET10"
+                        },
+                        "contact": {
+                            "phone": "9450394039",
+                            "email": "buyerapp@interface.com"
+                        },
+                        "person": {
+                            "name": "John Doe"
+                        }
+                    }
+                }
+            ],
+            "source_id": "CUST1",
+            "complainant_id": "NP1",
+            "respondent_ids": [
+                "NP2"
+            ],
+            "description": {
+                "code": "ORD01",
+                "short_desc": "Issue with product quality",
+                "long_desc": "Product quality is not correct. facing issues while using the product",
+                "additional_desc": {
+                    "url": "https://buyerapp.com/additonal-details/desc.txt",
+                    "content_type": "text/plain"
+                },
+                "images": [
+                    "http://buyerapp.com/addtional-details/img1.png",
+                    "http://buyerapp.com/addtional-details/img2.png"
+                ]
+            },
+            "last_action_id": "NP2-GRO",
+            "actions": [
+                {
+                    "description": {
+                        "code": "OPEN",
+                        "short_desc": "OPEN"
+                    },
+                    "actor_details": {
+                        "name": "vidya sagar"
+                    },
+                    "id": "H1",
+                    "updated_at": "2025-03-05T12:07:53.817Z",
+                    "action_by": "NP2",
+                    "_id": "67c83e99646ae800b7c156f0"
+                },
+                {
+                    "description": {
+                        "code": "PROCESSING",
+                        "short_desc": "Issue is in processing"
+                    },
+                    "actor_details": {
+                        "name": "Satya Traders"
+                    },
+                    "id": "A2",
+                    "updated_at": "2025-03-05T12:08:43.262Z",
+                    "action_by": "khetisauda.com",
+                    "_id": "67c83ecb646ae800b7c15706"
+                },
+                {
+                    "description": {
+                        "code": "RESOLVED",
+                        "short_desc": "Issue is in processing"
+                    },
+                    "actor_details": {
+                        "name": "Satya Traders"
+                    },
+                    "id": "A2",
+                    "updated_at": "2025-03-05T12:09:04.988Z",
+                    "action_by": "khetisauda.com",
+                    "_id": "67c83ee0646ae800b7c1570e"
+                },
+                {
+                    "description": {
+                        "code": "ESCALATED",
+                        "short_desc": "OPEN"
+                    },
+                    "actor_details": {
+                        "name": "vidya sagar"
+                    },
+                    "id": "H1",
+                    "updated_at": "2025-03-05T12:09:40.222Z",
+                    "action_by": "NP2",
+                    "_id": "67c83f04646ae800b7c15719"
+                },
+                {
+                    "description": {
+                        "code": "RESOLVED",
+                        "short_desc": "Issur"
+                    },
+                    "actor_details": {
+                        "name": "Satya Traders"
+                    },
+                    "id": "A6",
+                    "updated_at": "2025-03-05T12:10:18.836Z",
+                    "action_by": "khetisauda.com",
+                    "_id": "67c83f2a646ae800b7c15729"
+                },
+                {
+                    "description": {
+                        "code": "ESCALATED",
+                        "short_desc": "OPEN"
+                    },
+                    "actor_details": {
+                        "name": "vidya sagar"
+                    },
+                    "id": "H1",
+                    "updated_at": "2025-03-05T12:12:01.658Z",
+                    "action_by": "NP2",
+                    "_id": "67c83f91646ae800b7c15740"
+                },
+                {
+                    "id": "A8",
+                    "description": {
+                        "code": "RESOLVED",
+                        "short_desc": "Resolved"
+                    },
+                    "updated_at": "2025-03-05T12:12:28.977Z",
+                    "action_by": "khetisauda.com",
+                    "actor_details": {
+                        "name": "Satya Traders"
+                    },
+                    "_id": "67c83fac646ae800b7c15754"
+                },
+                {
+                    "id": "NP2-GRO",
+                    "type": "COUNTERPARTY-NP-GRO",
+                    "info": {
+                        "org": {
+                            "name": "preprod-ondc.khetisauda.com::ONDC:RET10"
+                        },
+                        "contact": {
+                            "phone": "8851929554",
+                            "email": "Satyapal@navankur.org"
+                        },
+                        "person": {
+                            "name": "Satyapal Gupta"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
